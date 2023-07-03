@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  @apply text-sm uppercase bg-gray-200 hover:bg-orange-400 hover:text-white font-medium py-1 px-4 duration-[400ms];
+}
+
+.nav-link.active {
+  @apply bg-black text-white hover:bg-orange-400;
+}
+
+.nav-dropdown-btn {
+  @apply nav-link cursor-default hover:bg-gray-200 hover:text-black relative;
+}
+
+.nav-dropdown-btn:hover .dropdown,
+.nav-dropdown-btn:focus .dropdown,
+.nav-dropdown-btn:focus-within .dropdown {
+  @apply flex flex-col;
+}
+
+.dropdown {
+  @apply hidden absolute right-0 top-full;
+}
+
+.drop-link {
+  @apply bg-white py-1 px-2 hover:bg-orange-400 hover:text-white font-medium duration-[400ms];
+}
