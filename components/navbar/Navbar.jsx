@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { BsFacebook, BsTwitter, BsTiktok, BsInstagram } from 'react-icons/bs'
 import { AiFillShopping } from 'react-icons/ai'
 import NavLink from './NavLink'
+import Socials from '@components/Socials'
 
 function Navbar() {
   const navLinks = [
@@ -21,12 +21,7 @@ function Navbar() {
       </Link>
 
       {/* SOCIALS */}
-      <div className="flex gap-5">
-        <BsFacebook className="text-xl" aria-label="Facebook" />
-        <BsTwitter className="text-xl" aria-label="Twitter" />
-        <BsTiktok className="text-xl" aria-label="TikTok" />
-        <BsInstagram className="text-xl" aria-label="Instagram" />
-      </div>
+      <Socials  />
 
       <div className="flex gap-px justify-center items-center flex-wrap">
         {/* LINKS */}
