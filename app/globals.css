@@ -4,12 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GENERAL */
+
 body,
 html {
   margin: 0;
   padding: 0;
   min-height: 100vh;
 }
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+/* NAVBAR */
 
 .nav-link {
   @apply text-sm uppercase bg-gray-200 hover:bg-orange-400 hover:text-white font-medium py-1 px-4 duration-[400ms];
