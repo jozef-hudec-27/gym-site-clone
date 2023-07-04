@@ -11,7 +11,7 @@ function TrainerCard({ trainer }) {
   return (
     <div className="flex  flex-col gap-3">
       <div className="relative flex flex-col">
-        <Image src={`/assets/images/${filename}`} alt="Trainer" width={287} height={0} />
+        <Image src={`/assets/images/${filename}`} alt={`Trainer ${name}`} width={287} height={0} />
 
         <div className="w-10/12 absolute bg-white p-3 -right-4 bottom-3">
           <p className="uppercase ">{name}</p>

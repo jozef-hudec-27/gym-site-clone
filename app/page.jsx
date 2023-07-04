@@ -1,7 +1,7 @@
 import FacilityCard from '@components/FacilityCard'
 import TrainerCard from '@components/TrainerCard'
 import Image from 'next/image'
-import { trainers } from '@info'
+import { trainers, facilities } from '@info'
 
 function HomePage() {
   return (
@@ -45,10 +45,9 @@ function HomePage() {
         <h2 className="uppercase font-extrabold text-5xl md:text-7xl">Facilities</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-3/4">
-          <FacilityCard facility={{ filename: 'facility1.webp', items: ["Individual TV's", 'Quality Equipment'] }} />
-          <FacilityCard facility={{ filename: 'facility2.webp', items: ['Locker Rooms', 'Towel Service'] }} />
-          <FacilityCard facility={{ filename: 'facility3.webp', items: ['Free WIFI', 'Free Parking'] }} />
-          <FacilityCard facility={{ filename: 'facility4.webp', items: ['9500 Square Feet', 'Five Star Service'] }} />
+          {facilities.map((facility, i) => {
+            return <FacilityCard key={i} facility={facility} />
+          })}
         </div>
       </section>
 

@@ -28,3 +28,10 @@ export const trainers = [
   He has been a certified personal trainer for over 15 years. Strength training and conditioning has always been a staple in his workouts. He has a focus on proper form and helping his clients achieve realistic goals. He believes that changing your life is a process that takes consistency and healthy life choices. Every client is a unique project and David Waters can get you to the finish line! `,
   },
 ]
+
+export const facilities = [
+  { filename: 'facility1.webp', items: ["Individual TV's", 'Quality Equipment'] },
+  { filename: 'facility2.webp', items: ['Locker Rooms', 'Towel Service'] },
+  { filename: 'facility3.webp', items: ['Free WIFI', 'Free Parking'] },
+  { filename: 'facility4.webp', items: ['9500 Square Feet', 'Five Star Service'] },
+]
