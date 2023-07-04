@@ -6,7 +6,7 @@ function FacilityCard({ facility }) {
   return (
     <div className="bg-black flex border border-black border-solid border-t-0">
       <div className="w-1/2">
-        <Image src={`/assets/images/${filename}`} width={310} height={0} />
+        <Image src={`/assets/images/${filename}`} alt="Gym facility" width={310} height={0} />
       </div>
 
       <div className="w-1/2 p-6">

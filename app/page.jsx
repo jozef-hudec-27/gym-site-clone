@@ -1,9 +1,12 @@
 import FacilityCard from '@components/FacilityCard'
+import TrainerCard from '@components/TrainerCard'
 import Image from 'next/image'
+import { trainers } from '@info'
 
 function HomePage() {
   return (
     <div>
+      {/* HERO  */}
       <section className="hero-section flex-center flex-col gap-32 py-24 px-12 bg-hero bg-cover w-10/12 mx-auto">
         <h1 className="text-3xl md:text-6xl text-center uppercase text-white font-extrabold drop-shadow-2xl">
           The ultimate
@@ -16,6 +19,7 @@ function HomePage() {
         </button>
       </section>
 
+      {/* DESCRIPTION + JOIN */}
       <section className="flex flex-col lg:flex-row justify-between gap-0 lg:gap-3 w-10/12 mx-auto mt-10 relative">
         <div className="bg-black flex-center p-16 lg:p-5 w-full lg:w-1/2">
           <div className="flex flex-col gap-12 items-center w-10/12 sm:w-2/3">
@@ -36,6 +40,7 @@ function HomePage() {
         </button>
       </section>
 
+      {/* FACILITIES */}
       <section className="bg-neutral-300 py-14 flex-center flex-col gap-14 mt-1.5">
         <h2 className="uppercase font-extrabold text-5xl md:text-7xl">Facilities</h2>
 
@@ -44,6 +49,21 @@ function HomePage() {
           <FacilityCard facility={{ filename: 'facility2.webp', items: ['Locker Rooms', 'Towel Service'] }} />
           <FacilityCard facility={{ filename: 'facility3.webp', items: ['Free WIFI', 'Free Parking'] }} />
           <FacilityCard facility={{ filename: 'facility4.webp', items: ['9500 Square Feet', 'Five Star Service'] }} />
+        </div>
+      </section>
+
+      {/* TRAINERS */}
+      <section className="flex-center flex-col mt-14">
+        <h2 className="uppercase font-extrabold text-5xl md:text-7xl text-center">Meet our trainers</h2>
+        <p className="mt-8 px-4 py-2 text-gray-600">
+          No matter your starting point, our team of certified and experienced trainers will make your fitness their
+          priority as your personalized fitness partner.{' '}
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-10 bg-neutral-200 w-11/12 py-12 mt-3">
+          {trainers.map((trainer, i) => {
+            return <TrainerCard key={i} trainer={trainer} />
+          })}
         </div>
       </section>
     </div>
