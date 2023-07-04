@@ -1,3 +1,4 @@
+import FacilityCard from '@components/FacilityCard'
 import Image from 'next/image'
 
 function HomePage() {
@@ -33,6 +34,17 @@ function HomePage() {
         <button className="bg-yellow-200 py-4 px-9 uppercase font-semibold rounded-lg hover:rounded-3xl duration-200 absolute left-1/2 top-0 lg:top-3/4 -translate-y-1/3 lg:translate-y-0 -translate-x-1/2">
           Join now
         </button>
+      </section>
+
+      <section className="bg-neutral-300 py-14 flex-center flex-col gap-14 mt-1.5">
+        <h2 className="uppercase font-extrabold text-7xl">Facilities</h2>
+
+        <div className="grid grid-cols-2 gap-10 w-3/4">
+          <FacilityCard facility={{ filename: 'facility1.webp', items: ["Individual TV's", 'Quality Equipment'] }} />
+          <FacilityCard facility={{ filename: 'facility2.webp', items: ['Locker Rooms', 'Towel Service'] }} />
+          <FacilityCard facility={{ filename: 'facility3.webp', items: ['Free WIFI', 'Free Parking'] }} />
+          <FacilityCard facility={{ filename: 'facility4.webp', items: ['9500 Square Feet', 'Five Star Service'] }} />
+        </div>
       </section>
     </div>
   )
