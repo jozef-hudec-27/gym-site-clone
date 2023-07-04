@@ -15,9 +15,9 @@ function HomePage() {
         </button>
       </section>
 
-      <section className="flex justify-between gap-3 w-10/12 mx-auto mt-10">
-        <div className="bg-black flex-center p-5 w-1/2">
-          <div className="flex flex-col gap-12 items-center w-2/3">
+      <section className="flex flex-col lg:flex-row justify-between gap-0 lg:gap-3 w-10/12 mx-auto mt-10">
+        <div className="bg-black flex-center p-16 lg:p-5 w-full lg:w-1/2">
+          <div className="flex flex-col gap-12 items-center w-10/12 sm:w-2/3">
             <h2 className="text-white text-5xl font-semibold">THE GYM L.A.</h2>
             <p className="text-white text-justify">
               Real people working really hard, to get real results. At THE GYM L.A your fitness is our #1 priority. From
@@ -26,8 +26,8 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="w-1/2">
-          <Image src="/assets/images/gym.webp" width={863} height={100} />
+        <div className="w-full lg:w-1/2">
+          <Image src="/assets/images/gym.webp" alt="Man curling 60 pounds" width={863} height={100} />
         </div>
       </section>
     </div>
