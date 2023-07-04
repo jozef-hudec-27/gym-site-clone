@@ -15,7 +15,7 @@ function Navbar() {
   ]
 
   return (
-    <nav className="flex flex-col xl:flex-row justify-center items-center gap-5 py-4 px-2">
+    <nav className="sticky top-0 bg-white z-10 flex flex-col xl:flex-row justify-center items-center gap-5 py-4 px-2">
       <Link href="/">
         <Image src="/assets/images/logo.webp" alt="Gym logo" height={0} width={250} />
       </Link>
