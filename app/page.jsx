@@ -37,9 +37,9 @@ function HomePage() {
       </section>
 
       <section className="bg-neutral-300 py-14 flex-center flex-col gap-14 mt-1.5">
-        <h2 className="uppercase font-extrabold text-7xl">Facilities</h2>
+        <h2 className="uppercase font-extrabold text-5xl md:text-7xl">Facilities</h2>
 
-        <div className="grid grid-cols-2 gap-10 w-3/4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-3/4">
           <FacilityCard facility={{ filename: 'facility1.webp', items: ["Individual TV's", 'Quality Equipment'] }} />
           <FacilityCard facility={{ filename: 'facility2.webp', items: ['Locker Rooms', 'Towel Service'] }} />
           <FacilityCard facility={{ filename: 'facility3.webp', items: ['Free WIFI', 'Free Parking'] }} />

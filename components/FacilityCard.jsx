@@ -12,7 +12,7 @@ function FacilityCard({ facility }) {
       <div className="w-1/2 p-6">
         {items.map((item, i) => {
           return (
-            <p key={i} className="text-white font-semibold text-lg">
+            <p key={i} className="text-white font-semibold text-sm md:text-lg">
               {item}
             </p>
           )
