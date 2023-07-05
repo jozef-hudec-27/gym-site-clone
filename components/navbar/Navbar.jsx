@@ -7,11 +7,11 @@ import Socials from '@components/Socials'
 function Navbar() {
   const navLinks = [
     ['Home', '/'],
-    ['About', '/'],
+    ['About', '/about'],
     ['Hours', '/'],
     ['Store', '/'],
-    ['Trainers', '/'],
-    ['Testimonials', '/'],
+    ['Trainers', '/trainers'],
+    ['Testimonials', '/testimonials'],
   ]
 
   return (
