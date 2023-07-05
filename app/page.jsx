@@ -2,6 +2,7 @@ import FacilityCard from '@components/FacilityCard'
 import TrainerCard from '@components/TrainerCard'
 import Image from 'next/image'
 import { trainers, facilities } from '@info'
+import TestimonialsCarousel from '@components/testimonials/TestimonialsCarousel'
 
 function HomePage() {
   return (
@@ -77,6 +78,9 @@ function HomePage() {
           <Image src="/assets/images/gym4.webp" alt="Gym photo" width={286} height={0} />
         </div>
       </section>
+
+      {/* TESTIMONIALS */}
+      <TestimonialsCarousel />
     </div>
   )
 }

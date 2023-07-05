@@ -35,3 +35,21 @@ export const facilities = [
   { filename: 'facility3.webp', items: ['Free WIFI', 'Free Parking'] },
   { filename: 'facility4.webp', items: ['9500 Square Feet', 'Five Star Service'] },
 ]
+
+export const testimonials = [
+  {
+    filename: 'testimonial1.webp',
+    text: `Love going to this gym, it is amazing. From the front staff, to trainers and the owners... you're always treated with respect and a warm smile. Highly recommend this spot, you won't regret it`,
+    author: 'Kim F. CA',
+  },
+  {
+    filename: 'testimonial2.webp',
+    text: `Want to thank the staff at The Gym LA for being so helpful. I am new to weights (been a runner all my life) and they helped walk me through each machine and check up on me whenever they see me struggling. Clean, kind, and affordable. Amani is THE BEST`,
+    author: 'Jen M. CA',
+  },
+  {
+    filename: 'testimonial3.webp',
+    text: `I love this gym so much! It's so clean and the staff is always friendly and delightful. They try to know you by name and are more than happy to help w anything. They have so many machines, free weights, benches, etc. They literally have everything you could ever need! I HIGHLY recommend joining this gym and getting the chill chair addition. You won't regret it if you really love to work out and relax`,
+    author: 'Halima S. CA',
+  },
+]

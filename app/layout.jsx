@@ -1,6 +1,7 @@
 import Navbar from '@components/navbar/Navbar'
 import './globals.css'
 import Footer from '@components/Footer'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 export const metadata = {
   title: 'Next.js',
@@ -10,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='flex flex-col'>
+      <body className="flex flex-col">
         <Navbar />
 
         {children}
