@@ -44,3 +44,17 @@ html {
 .drop-link {
   @apply bg-white py-1 px-2 hover:bg-orange-400 hover:text-white font-medium duration-[400ms];
 }
+
+/* FORM */
+
+.form-input {
+  @apply border-b-2	 border-black border-solid hover:border-b-3 focus:border-b-1 outline-0 pl-4 pb-1;
+}
+
+.form-input-wrapper {
+  @apply flex flex-col gap-2 w-full;
+}
+
+.form-label {
+  @apply text-xs;
+}
