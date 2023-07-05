@@ -8,7 +8,7 @@ function Navbar() {
   const navLinks = [
     ['Home', '/'],
     ['About', '/about'],
-    ['Hours', '/'],
+    ['Hours', '/hours'],
     ['Store', '/'],
     ['Trainers', '/trainers'],
     ['Testimonials', '/testimonials'],

@@ -11,6 +11,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         hero: "url('/assets/images/hero.webp')",
+        hours: "url('/assets/images/hours.webp')"
       },
       borderWidth: {
         1: '1px',
