@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'HOURS | The Gym LA',
+}
+
 function HoursPage() {
   return (
     <div>
