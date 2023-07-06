@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
-function NavLink({ navLink }) {
+function NavLink({ navLink, isActive }) {
   const [title, href] = navLink
 
   return (
-    <Link className={`nav-link ${title === 'Home' && 'active'}`} href={href}>
+    <Link className={`nav-link ${isActive && 'active'}`} href={href}>
       {title}
     </Link>
   )

@@ -1,15 +1,26 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiFillShopping } from 'react-icons/ai'
 import NavLink from './NavLink'
 import Socials from '@components/Socials'
+import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 function Navbar() {
+  const pathname = usePathname()
+  const [activePath, setActivePath] = useState(pathname)
+
+  useEffect(() => {
+    setActivePath(pathname)
+  }, [pathname])
+
   const navLinks = [
     ['Home', '/'],
     ['About', '/about'],
     ['Hours', '/hours'],
-    ['Store', '/'],
+    ['Store', '/store'],
     ['Trainers', '/trainers'],
     ['Testimonials', '/testimonials'],
   ]
@@ -21,7 +32,7 @@ function Navbar() {
       </Link>
 
       {/* SOCIALS */}
-      <Socials  />
+      <Socials />
 
       <div className="flex gap-px justify-center items-center flex-wrap">
         {/* LINKS */}
@@ -29,7 +40,7 @@ function Navbar() {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
         {navLinks.map((navLink, i) => {
-          return <NavLink key={i} navLink={navLink} />
+          return <NavLink key={i} navLink={navLink} isActive={navLink[1] === activePath} />
         })}
 
         {/* DROPDOWNS */}
